@@ -1,0 +1,255 @@
+/* style.css */
+/* Importa uma fonte do Google Fonts similar à usada pela Apple */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap'); 
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5; /* Cor de fundo clara */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background: #fff; /* Fundo branco no cabeçalho */
+    padding: 20px 0;
+    border-bottom: 2px solid #d53838; /* Linha vermelha abaixo do cabeçalho */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #222; /* Cor da logo escura */
+    text-decoration: none;
+}
+
+.logo span {
+    color: #d53838; /* Vermelho PT */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px; 
+}
+
+nav a {
+    color: #222; /* Cor do link escura */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease; 
+}
+
+nav a:hover {
+    color: #d53838; /* Vermelho PT ao passar o mouse */
+}
+
+/* Estilos da seção Hero */
+.hero {
+    background-color: #d53838; /* Vermelho PT */
+    padding: 80px 0; 
+    text-align: center; 
+}
+
+.hero h1 {
+    font-size: 3.5rem; 
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff; /* Texto branco */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #fff; /* Texto branco */
+}
+
+.button {
+    background-color: #222; /* Cor de fundo preta */
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #d53838; /* Vermelho PT ao passar o mouse */
+}
+
+/* Estilos da seção Propostas */
+.propostas {
+    padding: 60px 0;
+    background: #f5f5f5;
+}
+
+.proposta-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.proposta {
+    background: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 20px;
+    flex: 1 0 280px; 
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.proposta:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.proposta img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.proposta h3 {
+    font-size: 1.8rem;
+    color: #222; /* Cor do título escura */
+    margin-bottom: 15px;
+}
+
+.proposta p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Estilos da seção Sobre */
+.sobre {
+    padding: 60px 0;
+    background: #fff;
+    text-align: center;
+}
+
+.sobre h2 {
+    font-size: 2.5rem;
+    color: #222; /* Cor do título escura */
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Estilos do rodapé */
+footer {
+    background: #222; /* Cor de fundo preta */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .proposta {
+        flex: 1 0 100%;
+        margin: 10px 0;
+    }
+}
+/* style.css */
+/* ... outros estilos ... */
+
+/* Estilos da seção funções */
+.funcoes {
+    padding: 60px 0;
+    background: #f5f5f5;
+}
+
+.funcao-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Distribui espaço ao redor dos itens */
+    gap: 20px; /* Adiciona espaço entre as colunas */
+}
+
+.funcao {
+    background: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    flex: 1 1 400px; /* Cada função ocupa pelo menos 400px e pode crescer */
+    text-align: left; /* Alinha o texto à esquerda */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.funcao:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.funcao h3 {
+    font-size: 1.8rem;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.funcao p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px; /* Adiciona espaçamento após o parágrafo */
+}
+
+.funcao ul {
+    list-style-type: disc; /* Utiliza marcadores circulares */
+    padding-left: 20px; /* Adiciona indentação à lista */
+}
+
+.funcao li {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 10px; /* Adiciona espaçamento entre os itens da lista */
+}
+
+/* ... outros estilos ... */
