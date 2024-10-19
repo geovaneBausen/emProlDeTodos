@@ -40,7 +40,7 @@ nav {
 }
 
 .logo span {
-    color: #d53838; /* Vermelho PT */
+    color: #ADD8E6; /* */
 }
 
 nav ul {
@@ -67,7 +67,7 @@ nav a:hover {
 
 /* Estilos da seção Hero */
 .hero {
-    background-color: #d53838; /* Vermelho PT */
+    background-color: #ADD8E6; /* Vermelho PT */
     padding: 80px 0; 
     text-align: center; 
 }
